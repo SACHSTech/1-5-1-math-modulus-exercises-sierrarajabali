@@ -6,8 +6,14 @@ class Rads extends ConsoleProgram {
   */
   
   public void run() {
+    //User input for degrees
+    double degrees = readDouble("Degrees Measure?: ");
+
+    //radians conversion
+    double radians = Math.toRadians(degrees);
     
-    // start coding here
+    //prints radian measure to screen
+    System.out.println(radians);
     
   }
 }

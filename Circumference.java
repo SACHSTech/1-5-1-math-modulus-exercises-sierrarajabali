@@ -2,12 +2,18 @@ class Circumference extends ConsoleProgram {
 
   /**
   * Description
-  * @author:
+  * @author: Sierra Rajabali 
   */
   
-  public void run() {
+  public void ConsoleProgram() {
+    //Gets radius
+    double radius = readDouble("> ");
+
+    // calculate circumference 
+    double circumference = 2 * radius * Math.PI; 
     
-    // start coding here
+    // print circumference 
+    System.out.println(circumference); 
     
   }
 }

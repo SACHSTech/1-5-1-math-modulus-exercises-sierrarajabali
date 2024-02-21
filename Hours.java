@@ -6,8 +6,14 @@ class Hours extends ConsoleProgram {
   */
   
   public void run() {
-    
-    // start coding here
-    
+    //input
+    int hours = readInt("enter hours?: ");
+
+    //calculations
+    int hoursRemainder = hours % 24;
+    int days = (hours - hoursRemainder) / 24;
+
+    //print
+    System.out.println(days + " days and " + hoursRemainder + " hours");
   }
 }

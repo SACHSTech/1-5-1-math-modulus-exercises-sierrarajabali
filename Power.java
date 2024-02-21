@@ -7,7 +7,14 @@ class Power extends ConsoleProgram {
   
   public void run() {
     
-    // start coding here
-    
+    //inputs
+    double base = readDouble("Base?: ");
+    double exponent = readDouble("Exponent: ");
+
+    //calculation
+    double result = Math.pow(base, exponent);
+
+    //prints result
+    System.out.println(result);
   }
 }

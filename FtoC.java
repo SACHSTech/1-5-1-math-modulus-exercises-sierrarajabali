@@ -7,7 +7,13 @@ class FtoC extends ConsoleProgram {
   
   public void run() {
     
-    // start coding here
+    //inputs
+    double Farenheit = readDouble("Farenheit temp?: ");
+
+    //celcius calculation
+    double celcius = (5.0 / 9.0) * (Farenheit - 32.0);
     
+    //prints celcius temp
+    System.out.println(celcius);
   }
 }

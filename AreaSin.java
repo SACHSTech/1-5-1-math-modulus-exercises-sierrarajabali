@@ -6,8 +6,16 @@ class AreaSin extends ConsoleProgram {
   */
   
   public void run() {
-    
-    // start coding here
+    //gets inputs
+    double sideA = readDouble("Side A?: ");
+    double sideB = readDouble("Side B?: ");
+    double angle = readDouble("Angle in degrees?: ");
+
+    //area calculation
+    double area = (sideA * sideB * Math.toDegrees(Math.sin(angle))) / 2;
+
+    //print area
+    System.out.println(area);
     
   }
 }
